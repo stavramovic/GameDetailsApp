@@ -1,0 +1,121 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.box {
+    position: relative;
+    width: 1100px;
+    height: 800px;
+    background-color: #1a1a1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.letters {
+    color: white;
+    font-size: 50px;
+    padding-left: 70px;
+    text-align: center;
+}
+
+.box2 {
+    width: 500px;
+    height: 300px;
+    margin-left: 70px;
+    border-radius: 10px;    
+}
+
+.groupOfPictures {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 200px;
+    float: right;
+    margin-right: 50px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 500px 350px;
+}
+
+.box3 {
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.aboutLetters {
+    font-size: 20px;
+}
+
+.descriptionStyle {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    height: 120px;
+}
+
+
+.leftSide {
+    margin-left: 70px;
+    color: white;
+    width: 500px;
+}
+
+.detailsSize {
+    font-size: 20px;
+    background-color: #141418;
+}
+
+.rightSide {
+    color: white;
+    width:350px;
+    margin-left: 155px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-bottom:10px;
+    background-color: #141418;
+    border-radius: 10px;
+}
+
+.genres {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.platforms {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.devs {
+    display: inline-flex;
+    
+    margin-bottom: 20px;
+}
+
+.website {
+    color: white;
+    display: inline-block;
+    margin-top:20px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.tagDiv {
+    background-color: #141418;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    padding: 0 5px 5px;
+    display: inline-flex;
+}
