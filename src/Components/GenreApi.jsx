@@ -4,16 +4,17 @@ import GenreCard from './GenreCard.jsx';
 import '../Components/card.styles.css';
   
 
+var date = new Date().toISOString().slice(0,10);
+
 
 function ActionAPI() {
 
   const [games, setGames] = useState([]);
-
-
+  
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=action&ordering=-metacritic&dates=2016-01-01,2021-06-01',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=action&ordering=-metacritic&dates=2016-01-01,${date}`,
     };
   
       axios.request(options).then(response => {
@@ -50,7 +51,7 @@ function RacingAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=racing&ordering=-metacritic&dates=2016-01-01,2021-06-01',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=racing&ordering=-metacritic&dates=2016-01-01,${date}`,
     };
   
       axios.request(options).then(response => {
@@ -88,7 +89,7 @@ function RpgAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=5&ordering=-metacritic&dates=2016-01-01,2021-06-01',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=5&ordering=-metacritic&dates=2016-01-01,${date}`,
     };
   
       axios.request(options).then(response => {
@@ -128,7 +129,7 @@ function ShooterAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=shooter&ordering=-metacritic&dates=2016-01-01,2021-06-01',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=shooter&ordering=-metacritic&dates=2016-01-01,${date}`,
     };
   
       axios.request(options).then(response => {
@@ -168,7 +169,7 @@ function SportsAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=sports&ordering=-metacritic&dates=2020-01-01,2021-06-01',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=sports&ordering=-metacritic&dates=2020-01-01,${date}`,
     };
   
       axios.request(options).then(response => {

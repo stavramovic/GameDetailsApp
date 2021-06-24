@@ -8,11 +8,13 @@ import './card.styles.css';
 function API() {
 
   const [games, setGames] = useState([]);
+  var date = new Date().toISOString().slice(0,10);
+  
 
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&ordering=-added&page_size=20&dates=2021-03-01,2021-05-31',
+      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&ordering=-added&page_size=20&dates=2021-03-01,${date}`,
     };
   
       axios.request(options).then(response => {
@@ -20,7 +22,7 @@ function API() {
       setGames(response.data.results);
     })
     .catch(error => console.log(error));
-  }, []);
+  }, [date]);
 
 
   return ( 
