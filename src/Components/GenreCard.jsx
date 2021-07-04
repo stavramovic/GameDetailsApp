@@ -1,7 +1,7 @@
 import React from 'react';
-import './card.styles.css';
 import Moment from 'react-moment';
-import {withRouter} from 'react-router-dom'
+import {withRouter} from 'react-router-dom';
+import '../sass/main.scss';
 
 
 const GenreCard = ({name,  backgroundImage, relDate, metacritic, history, slug}) => {

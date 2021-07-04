@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GameDetails from './GameDetails.jsx';
-import '../Components/card.styles.css';
-import '../Components/details.css';
-import {useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom';
+import '../sass/main.scss';
 
 function GameDetailsApi() {
 

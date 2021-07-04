@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GenreCard from './GenreCard.jsx';
-import '../Components/card.styles.css';
+import '../sass/main.scss';
   
 
 var date = new Date().toISOString().slice(0,10);

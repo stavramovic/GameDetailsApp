@@ -1,0 +1,108 @@
+.nameInfo {
+    color: white;
+    font-size: 2rem;
+    display: inline;
+  }
+  
+.left {
+  text-align: left;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.3rem;
+}
+
+.right {
+  float: right;
+  display: inline-flex;
+  align-items: right;
+}
+  
+.pictures {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 36rem;
+  height: 22rem;
+  object-fit: fill;
+  margin-bottom: 1rem;
+}
+  
+.text {
+  top: 5.4rem;
+  width: 80%;
+  height: 15rem;
+  padding-left: 28rem;
+  padding-top: 5rem;
+  font-size: 7rem;
+  color: white;
+  margin-bottom: 4rem;
+}  
+
+.letters {
+  color: white;
+  font-size: 5rem;
+  padding-left: 7rem;
+  text-align: center;
+}
+
+.aboutLetters {
+  font-size: 2rem;
+}
+
+.descriptionStyle {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  height: 12rem;
+  font-size: $font-primary;
+}
+
+.detailsSize {
+  font-size: 2rem;
+  background-color: #141418;
+}
+
+
+.genres {
+  display: inline-flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: $font-primary;
+}
+
+.platforms {
+  display: inline-flex;
+  margin-bottom: 2rem;
+  font-size: $font-primary;
+}
+
+.devs {
+  display: inline-flex;
+  margin-bottom: 2rem;
+  font-size: $font-primary;
+}
+
+.website {
+  color: white;
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: $font-primary;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.tagDiv {
+  background-color: #141418;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  margin-right: 0.5rem;
+  padding: 0 0.5rem 0.5rem;
+  display: inline-flex;
+  font-size: $font-primary;
+}
+
+.fontSize {
+  font-size: $font-primary;
+}

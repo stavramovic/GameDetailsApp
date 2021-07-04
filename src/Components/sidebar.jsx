@@ -1,7 +1,7 @@
 import React from 'react';
-import './sidebar-style.css';
 import {GiSteeringWheel, GiBasketballBall, GiPistolGun, GiAxeSword, GiMailedFist} from 'react-icons/gi';
 import {Link} from 'react-router-dom';
+import '../sass/main.scss';
 
 
 

@@ -9,7 +9,7 @@ import Shooter from './Pages/Shooter';
 import Sports from './Pages/Sports';
 import Details from './Pages/Details';
 
-import './App.css';
+import './sass/main.scss';
 
 
 

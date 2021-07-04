@@ -1,7 +1,7 @@
 import React from 'react';
-import './details.css';
 import Moment from 'react-moment';
 import { ScreenshotsApi } from './Screenshots';
+import '../sass/main.scss';
 
 
 const GameDetails = ({name, backgroundImage, description, relDate, developer, website, tags, genre, metacritic, platform}) => {
