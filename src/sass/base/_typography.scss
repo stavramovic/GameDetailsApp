@@ -39,6 +39,10 @@
   animation: moveFromLeft 1s ease-out;
 }  
 
+.text-font {
+  font-size: $font-primary;
+}
+
 .letters {
   color: white;
   font-size: 5rem;
@@ -55,6 +59,7 @@
   margin-bottom: 7rem;
   height: 12rem;
   font-size: $font-primary;
+  text-align: justify;
 }
 
 .detailsSize {
