@@ -1,1 +1,1 @@
-# GameDetailsApp
+# game-details-website
