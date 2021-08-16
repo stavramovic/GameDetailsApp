@@ -27,7 +27,7 @@ function ScreenshotsApi() {
     <div className='groupOfPictures'>
       {screens.slice(0,4).map(screen => { 
         return (
-          <Zoom zoomMargin={40} overlayBgColorEnd={'rgba(255,255,255,0'}>
+          <Zoom zoomMargin={40} overlayBgColorEnd={'rgba(255,255,255,0.3'}>
             <img
               key={screen.id}
               src={screen.image} 
