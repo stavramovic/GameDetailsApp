@@ -1,10 +1,25 @@
 .card-list {
-    width: 70vw;
+    width: 75vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:5rem;
+    grid-gap: 5rem;
     animation: moveFromBottom 1.5s ease-out;
+
+    @include respond(tab-land) {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 3rem;
+    }
+    
+    @include respond(tab-port) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
   
   .card-container {
@@ -18,6 +33,20 @@
     text-align: center;
     align-self: flex-start;
     transition: all .8 ease;
+
+    @include respond(tab-land) {
+      width: 34rem;
+    }
+
+    @include respond(tab-port) {
+      width: 40rem;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      width: 30rem;
+      margin: 0 auto;
+    }
 
     &:hover  {
         transform: scale(1.02);

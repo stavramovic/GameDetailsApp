@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -136,11 +136,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
   .navbar {
     top: 0;
     width: 8rem;
-    height: 100vh;
+    height: 100%;
   }
 
   .navbar:hover {
