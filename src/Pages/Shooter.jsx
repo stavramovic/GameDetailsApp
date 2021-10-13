@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import Sidebar from '../Components/sidebar.jsx';
-import {ShooterAPI} from '../Components/GenreApi.jsx';
-
+import {GenreAPI} from '../Components/GenreApi.jsx';
 
 
 class Shooter extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { genre: 'shooter'}
+    }
     render() {
         return (
             <>
                 <Sidebar />
                 <h1 className='text'>Shooter</h1>
-                <ShooterAPI />
+                <GenreAPI genre={this.state.genre} />
             </>
         );
     }
