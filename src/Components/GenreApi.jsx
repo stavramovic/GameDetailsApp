@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GenreCard from './GenreCard.jsx';
 import '../sass/main.scss';
+import name from '../Pages/Action'
   
 
 let date = new Date().toISOString().slice(0,10);
@@ -19,7 +20,7 @@ function ActionAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=action&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=${name}&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
@@ -56,7 +57,7 @@ function RacingAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=racing&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=racing&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
@@ -94,7 +95,7 @@ function RpgAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=5&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=5&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
@@ -134,7 +135,7 @@ function ShooterAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=shooter&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=shooter&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
@@ -174,7 +175,7 @@ function SportsAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=026d2b8347454a658ee73fac07c67f6b&page_size=20&genres=sports&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=sports&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
