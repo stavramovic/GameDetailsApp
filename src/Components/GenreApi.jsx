@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GenreCard from './GenreCard.jsx';
 import '../sass/main.scss';
-import name from '../Pages/Action'
+
   
 
 let date = new Date().toISOString().slice(0,10);
@@ -20,7 +20,7 @@ function ActionAPI() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=${name}&ordering=-metacritic&dates=${oldDate},${date}`,
+      url: `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page_size=20&genres=action&ordering=-metacritic&dates=${oldDate},${date}`,
     };
   
       axios.request(options).then(response => {
