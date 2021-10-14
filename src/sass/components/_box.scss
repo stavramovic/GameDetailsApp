@@ -4,59 +4,187 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 85px;
+    margin-top: 45px;
+
+    @include respond(phone) {
+        margin-top: 0;
+    }
 }
 
 .box {
     position: relative;
-    width: 1100px;
-    height: 800px;
+    width: 110rem;
+    height: 85rem;
     background-color: #1a1a1c;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+
+    @include respond(tab-land) {
+        width: 99rem;
+        height: 89rem;
+    }
+
+    @include respond(tab-port) {
+        width: 100vw;
+        height: 92rem;
+    }
+
+    @include respond(phone) {
+        background-color: #141418;
+        box-shadow: none;
+        height: 150rem;
+        display:grid;
+        justify-content: center;
+    }
 }
 
-.box2 {
-    width: 500px;
-    height: 300px;
-    margin-left: 70px;
-    border-radius: 10px;    
+.pictures-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 50rem 47rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+        grid-template-columns: 50rem 39rem;
+        margin-left: 4.5rem;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 50rem 38.7rem;
+        margin-left: 2.5rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 37.5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+.picture {
+    width: 50rem;
+    height: 31rem;
+    border-radius: 1rem;    
+
+    @include respond(tab-land) {
+        width: 50rem;
+    }
+
+    @include respond(tab-port) {
+        width: 50rem;
+        height: 35rem;
+    }
+
+    @include respond(phone) {
+        width: 37.5rem;
+        height: 25rem;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .groupOfPictures {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 200px 200px;
-    float: right;
-    margin-right: 50px;
+    grid-gap: 1rem;
+    grid-template-columns: 23rem 23rem;
+    
+    
+
+    @include respond(tab-land) {
+        grid-template-columns: 18.9rem 18.9rem;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 18.7rem 18.7rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 18.5rem 18.5rem;
+        grid-gap: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.small-pictures {
+    width: 23rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 5px;
+
+    @include respond(tab-land) {
+        width: 18.9rem;
+    }
+
+    @include respond(tab-port) {
+        width: 18.7rem;
+        height: 16.9rem;
+    }
+
+    @include respond(phone) {
+        width: 18.5rem;
+        height: 13.7rem;
+    }
 }
 
 .group {
     display: grid;
-    grid-template-columns: 500px 350px;
+    grid-template-columns: 50rem 48rem;
+    grid-gap: 1rem;
+    margin-left: 6rem;
+    justify-items: center;
+
+    @include respond(tab-land) {
+        grid-template-columns: 50rem 39rem;
+        margin-left: 4.5rem;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 50rem 38.7rem;
+        margin-left: 2.5rem;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 37rem;
+        margin-left: 0;
+    }
 }
 
-.box3 {
-    width: 200px;
-    height: 120px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.leftSide {
-    margin-left: 70px;
+.about {
     color: white;
-    width: 500px;
+    width: 50rem;
+    
+    @include respond(tab-land) {
+        width: 50rem;
+    }
+
+    @include respond(tab-port) {
+        width: 50rem;
+    }
+
+    @include respond(phone) {
+        width: 37rem;
+        margin-left: 5px;
+    }
 }
 
 
-.rightSide {
+.game-details {
     color: white;
-    width:350px;
-    margin-left: 155px;
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-bottom:10px;
+    width:40rem;
+    padding-left: 2rem; 
+    padding-bottom:1rem;
     background-color: #141418;
     border-radius: 10px;
+
+    @include respond(tab-land) {
+        width: 34.5rem;
+    }
+
+    @include respond(tab-port) {
+        width: 33.6rem;
+    }
 }

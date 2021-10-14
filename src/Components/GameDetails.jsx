@@ -9,12 +9,14 @@ const GameDetails = ({name, backgroundImage, description, relDate, developer, we
             <div className='container'>
                 <div className='box'>
                     <p className='letters'>{name}</p>
-                    <img src={backgroundImage} alt='' className='box2'></img>
+
+                    <div class='pictures-grid'>
+                        <img src={backgroundImage} alt='' className='picture'></img>
                     
-                    <ScreenshotsApi></ScreenshotsApi>
-                              
+                        <ScreenshotsApi></ScreenshotsApi>
+                    </div>        
                     <div className='group'>
-                        <div className='leftSide'>
+                        <div className='about'>
                             <p className='aboutLetters'>About:</p>
                             <div className='descriptionStyle'>
                                 {`${description.substring(0, 500)}...`}  
@@ -22,7 +24,7 @@ const GameDetails = ({name, backgroundImage, description, relDate, developer, we
                             <div className='fontSize'>Tags:&nbsp;{tags}</div>
                         </div>
 
-                        <div className='rightSide'>
+                        <div className='game-details'>
                             <p className='detailsSize'>Game Details:</p>
                             <div className='devs'>Developer:&nbsp;{developer}</div>   
                             <div className='fontSize'>Released:&nbsp;<Moment format="DD/MM/YYYY">{relDate}</Moment></div>

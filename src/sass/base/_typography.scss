@@ -64,7 +64,6 @@
 .letters {
   color: white;
   font-size: 5rem;
-  padding-left: 7rem;
   text-align: center;
 }
 
@@ -78,6 +77,10 @@
   height: 12rem;
   font-size: $font-primary;
   text-align: justify;
+
+  @include respond(phone) {
+    height: 16rem;
+  }
 }
 
 .detailsSize {

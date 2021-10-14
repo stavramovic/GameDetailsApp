@@ -38,7 +38,7 @@ function GameDetailsApi() {
             developer={detail.developers.map(developer => {    
               return (
                 <div key={developer.id}>
-                  {developer.name}</div>
+                  {developer.name}&nbsp;</div>
               )})}
 
             genre={detail.genres.map(genre =>{       
