@@ -13,7 +13,7 @@ function ScreenshotsApi() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: `https://api.rawg.io/api/games/${gameId}/screenshots?key=026d2b8347454a658ee73fac07c67f6b`,
+      url: `https://api.rawg.io/api/games/${gameId}/screenshots?key=${process.env.REACT_APP_API_KEY}`,
     };
   
       axios.request(options).then(response => {
