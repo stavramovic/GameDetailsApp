@@ -6,7 +6,7 @@ import {GenreAPI} from '../Components/GenreApi.jsx';
 class Sports extends Component {
     constructor(props) {
         super(props);
-        this.state = { genre: 'sports'}
+        this.state = { genre: 'sports' }
     }
     render() {
         return (

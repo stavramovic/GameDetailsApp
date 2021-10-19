@@ -6,7 +6,7 @@ import {GenreAPI} from '../Components/GenreApi.jsx';
 class RPG extends Component {
     constructor(props) {
         super(props);
-        this.state = { genre: '5'}
+        this.state = { genre: '5' }
     }
     render() {
         return (
