@@ -4,16 +4,16 @@ import {GenreAPI} from '../Components/GenreApi.jsx';
 
 
 class Shooter extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { genre: 'shooter' }
+    constructor(genre) {
+        super(genre)
+        this.genre = 'shooter';
     }
     render() {
         return (
             <>
                 <Sidebar />
                 <h1 className='text'>Shooter</h1>
-                <GenreAPI genre={this.state.genre} />
+                <GenreAPI genre={this.genre} />
             </>
         );
     }

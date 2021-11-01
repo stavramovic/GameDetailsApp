@@ -5,9 +5,9 @@ import {GenreAPI} from '../Components/GenreApi.jsx';
 
 
 class Action extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { genre: 'action' }
+    constructor(genre) {
+        super(genre)
+        this.genre = 'action';
     }
 
     render () {
@@ -15,7 +15,7 @@ class Action extends Component {
             <>
                 <Sidebar />
                 <h1 className='text'>Action</h1>
-                <GenreAPI genre={this.state.genre}/>
+                <GenreAPI genre={this.genre}/>
             </>
         );
     }
