@@ -6,11 +6,11 @@ import '../sass/main.scss';
 
 
 const Sidebar = () => (
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="logo">
-        <Link to="/" class="nav-link">
-          <span class="link-text logo-text">Home</span>
+  <nav className="navbar">
+    <ul className="navbar-nav">
+      <li className="logo">
+        <Link to="/" className="nav-link">
+          <span className="link-text logo-text">Home</span>
           <svg
             aria-hidden="true"
             focusable="false"
@@ -19,56 +19,56 @@ const Sidebar = () => (
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+            className="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
           >
-            <g class="fa-group">
+            <g className="fa-group">
               <path
                 fill="currentColor"
                 d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                class="fa-secondary"
+                className="fa-secondary"
               ></path>
               <path
                 fill="currentColor"
                 d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                class="fa-primary"
+                className="fa-primary"
               ></path>
             </g>
           </svg>
         </Link>
       </li>
 
-      <li class="nav-item">
-        <Link class="nav-link" to="/action">	
+      <li className="nav-item">
+        <Link className="nav-link" to="/action">	
           <GiMailedFist className="logoSize" />
-          <span class="link-text">Action</span>
+          <span className="link-text">Action</span>
         </Link>
       </li>
 
-      <li class="nav-item">
-        <Link class="nav-link" to="/racing">	
+      <li className="nav-item">
+        <Link className="nav-link" to="/racing">	
           <GiSteeringWheel className="logoSize" />
-          <span class="link-text">Racing</span>
+          <span className="link-text">Racing</span>
         </Link>
       </li>
 
-      <li class="nav-item">
-        <Link class="nav-link" to="/rpg">	
+      <li className="nav-item">
+        <Link className="nav-link" to="/rpg">	
           <GiAxeSword className="logoSize" />
-          <span class="link-text">RPG</span>
+          <span className="link-text">RPG</span>
         </Link>
       </li>
 
-      <li class="nav-item">
-        <Link class="nav-link" to="/shooter">	
+      <li className="nav-item">
+        <Link className="nav-link" to="/shooter">	
           <GiPistolGun className="logoSize" />
-          <span class="link-text">Shooter</span>
+          <span className="link-text">Shooter</span>
         </Link>
       </li>
 
-      <li class="nav-item">
-        <Link class="nav-link" to="/sports">	
+      <li className="nav-item">
+        <Link className="nav-link" to="/sports">	
           <GiBasketballBall className="logoSize" />
-          <span class="link-text">Sports</span>
+          <span className="link-text">Sports</span>
         </Link>
       </li>
       
