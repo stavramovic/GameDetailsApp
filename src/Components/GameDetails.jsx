@@ -10,7 +10,7 @@ const GameDetails = ({name, backgroundImage, description, relDate, developer, we
                 <div className='box'>
                     <p className='letters'>{name}</p>
 
-                    <div class='pictures-grid'>
+                    <div className='pictures-grid'>
                         <img src={backgroundImage} alt='' className='picture'></img>
                     
                         <ScreenshotsApi />
